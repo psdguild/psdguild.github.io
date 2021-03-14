@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on PSD Guild</title>
+    <link>https://psdguild.github.io/project/</link>
+    <description>Recent content in Projects on PSD Guild</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Mar 2021 22:47:09 -0800</lastBuildDate><atom:link href="https://psdguild.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Penguinese</title>
+      <link>https://psdguild.github.io/project/penguins/</link>
+      <pubDate>Wed, 03 Mar 2021 22:47:09 -0800</pubDate>
+      
+      <guid>https://psdguild.github.io/project/penguins/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
