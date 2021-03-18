@@ -166,17 +166,19 @@ strong{
 .stream{
   display:flex;
   flex-flow:row nowrap;
+  flex-direction: row;
   overflow-x:scroll;
   overflow-y:hidden;
   height:400px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   vertical-align: baseline;
-  align-items: flex-start;
   cursor:grab;
   margin-bottom:60px;
   /* margin-bottom:20px; */
   scrollbar-width: none;
   z-index:5;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
 }
 
 .first-media{
@@ -248,6 +250,7 @@ strong{
 }
 
 .media-wrapper img,.media-wrapper video{
+  display:block;
   height:calc(100% - 30px);
 }
 
@@ -333,6 +336,7 @@ strong{
   .stream{
     position:relative;
     height:auto;
+
   }
 
   .media-wrapper{
