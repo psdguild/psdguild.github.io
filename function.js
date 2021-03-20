@@ -32,14 +32,14 @@ function sizeReference(){
   //manually sets sizing for child elements, because CSS subgrid isn't widely supported
   col=document.querySelector('.col-reference').getBoundingClientRect().width;
   document.documentElement.style.setProperty('--col', col+10+'px');
-  console.log('COLUMN: ',getComputedStyle(document.body).getPropertyValue('--col'));
   let widewidth=document.querySelector('#reg-reference').getBoundingClientRect().width;
   document.documentElement.style.setProperty('--widewidth', widewidth+'px');
-  document.querySelectorAll('.stream').forEach((item, i) => {
-    let ratioHeight=item.querySelector('.first-media').getBoundingClientRect().height;
-    console.log(ratioHeight+'px');
-    item.style.setProperty('--ratioheight', ratioHeight+'px');
-  });
+  let ratioHeight=document.querySelector('.first-media').getBoundingClientRect().height;
+  document.documentElement.style.setProperty('--ratioheight', ratioHeight+'px');
+  // document.querySelectorAll('.stream').forEach((item, i) => {
+  //   let ratioHeight=item.querySelector('.first-media').getBoundingClientRect().height;
+  //   item.style.setProperty('--ratioheight', ratioHeight+'px');
+  // });
 
 }
 
@@ -203,10 +203,12 @@ function sortProjects(){
       dist[1]--;
     }
   }
+
   //this decides whether to flip the array, so it's not always a video in the front
-  if(Math.random()>0.5){
+  if(Math.random()>0.5 && window.matchMedia("(min-width: 600px)").matches){
     newArray.reverse();
   }
+
   //this shuffles the order of the list of media (the actual randomizing)
   durstShuffle(mediaArray);
 
