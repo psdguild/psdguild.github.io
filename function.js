@@ -40,7 +40,7 @@ function sizeReference(){
   //   let ratioHeight=item.querySelector('.first-media').getBoundingClientRect().height;
   //   item.style.setProperty('--ratioheight', ratioHeight+'px');
   // });
-
+  document.querySelector('.stream').classList.remove('preload');
 }
 
 function lazyLoad(){

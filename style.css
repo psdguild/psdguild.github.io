@@ -195,6 +195,10 @@ strong{
   justify-content: flex-start !important;
 }
 
+.stream.preload>*{
+  opacity:0;
+}
+
 .first-media{
   margin-left:var(--col);
 }
@@ -352,9 +356,10 @@ strong{
   .stream{
     position:relative;
     height:auto;
-
   }
-
+  .stream.preload{
+    max-height:400px;
+  }
   .media-wrapper{
     margin-right:10px;
     height:calc(var(--ratioheight) + 30px);
