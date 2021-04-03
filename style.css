@@ -72,10 +72,21 @@ strong{
   top:10px;
   margin-right: 5px;
   display:inline-block;
-  background-image:url("signatures/cecilialogo.png");
+  /* background-image:url("signatures/cecilialogo.png"); */
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+#psd img{
+  opacity:0;
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+}
+#psd img.viz{
+  opacity:1;
 }
 
 

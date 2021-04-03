@@ -104,18 +104,14 @@ function dragSetUp(){
 
 
 function logoSwitch(){
-  //animates logo
-  let psdSigs=[
-    "cecilialogo.png",
-    "stephlogo.png",
-    "karissalogo.png",
-    "nicologo.png",
-    "patricklogo.png"
-  ]
+  let nodePsds=document.querySelectorAll('#psd>img');
+  let psds=Array.from(nodePsds);
   let psdCount=1;
   setInterval(function () {
-    document.querySelector('#psd').style.backgroundImage=`url("signatures/${psdSigs[psdCount]}")`;
-    psdCount=(psdCount==psdSigs.length-1)?0:psdCount+1;
+    psds[psdCount].classList.add('viz');
+    let last=(psdCount==0)?psds[psds.length-1]:psds[psdCount-1];
+    last.classList.remove('viz');
+    psdCount=(psdCount==psds.length-1)?0:psdCount+1;
   }, 500);
 }
 
