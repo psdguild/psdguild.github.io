@@ -107,7 +107,7 @@ strong{
 #header{
   width:100%;
   padding-top:50px;
-  margin-bottom:50px;
+  /* margin-bottom:50px; */
 }
 
 #header h2{
@@ -287,7 +287,7 @@ strong{
 
 /* people */
 #peeps{
-  padding-top:40px;
+  padding-top:20px;
 
 }
 

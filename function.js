@@ -8,13 +8,13 @@ let maxFocus;
 
 function startUp(){
   jitter();
-  sortProjects();
-  sizeReference();
+  // sortProjects();
+  // sizeReference();
   lazyLoad();
-  dragSetUp();
+  // dragSetUp();
   logoSwitch();
-  listeners();
-  checkIntersection();
+  // listeners();
+  // checkIntersection();
 }
 
 
@@ -22,7 +22,7 @@ function jitter(){
   //rotates text
   let jitters=document.querySelectorAll('.jitter');
   jitters.forEach((item, i) => {
-    let rotation=2+Math.random()*1;
+    let rotation=1+Math.random()*1;
     rotation=rotation*(Math.random()>0.5?1:-1);
     item.style.setProperty('--rotate-amount', rotation+'deg');
   });
@@ -173,8 +173,8 @@ var crossing=(node)=>{
   }
 };
 
-let bckStyle=document.querySelector('.arrows svg[data-dir="bck"]').style;
-let fwdStyle=document.querySelector('.arrows svg[data-dir="fwd"]').style;
+// let bckStyle=document.querySelector('.arrows svg[data-dir="bck"]').style;
+// let fwdStyle=document.querySelector('.arrows svg[data-dir="fwd"]').style;
 
 function sortProjects(){
   //this gets all the media items and counts how many counts how many videos versus images
